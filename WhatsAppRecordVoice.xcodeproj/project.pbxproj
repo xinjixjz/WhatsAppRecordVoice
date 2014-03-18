@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF60437818D7ED39003B67DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF60437718D7ED39003B67DB /* Foundation.framework */; };
+		EF60437A18D7ED39003B67DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF60437918D7ED39003B67DB /* CoreGraphics.framework */; };
+		EF60437C18D7ED39003B67DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF60437B18D7ED39003B67DB /* UIKit.framework */; };
+		EF60438218D7ED39003B67DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF60438018D7ED39003B67DB /* InfoPlist.strings */; };
+		EF60438418D7ED39003B67DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF60438318D7ED39003B67DB /* main.m */; };
+		EF60438818D7ED39003B67DB /* WARVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF60438718D7ED39003B67DB /* WARVAppDelegate.m */; };
+		EF60438B18D7ED39003B67DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF60438918D7ED39003B67DB /* Main.storyboard */; };
+		EF60438E18D7ED39003B67DB /* WARVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF60438D18D7ED39003B67DB /* WARVViewController.m */; };
+		EF60439018D7ED39003B67DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF60438F18D7ED39003B67DB /* Images.xcassets */; };
+		EF60439718D7ED39003B67DB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF60439618D7ED39003B67DB /* XCTest.framework */; };
+		EF60439818D7ED39003B67DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF60437718D7ED39003B67DB /* Foundation.framework */; };
+		EF60439918D7ED39003B67DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF60437B18D7ED39003B67DB /* UIKit.framework */; };
+		EF6043A118D7ED39003B67DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF60439F18D7ED39003B67DB /* InfoPlist.strings */; };
+		EF6043A318D7ED39003B67DB /* WhatsAppRecordVoiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6043A218D7ED39003B67DB /* WhatsAppRecordVoiceTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF60439A18D7ED39003B67DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF60436C18D7ED39003B67DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF60437318D7ED39003B67DB;
+			remoteInfo = WhatsAppRecordVoice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF60437418D7ED39003B67DB /* WhatsAppRecordVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsAppRecordVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF60437718D7ED39003B67DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF60437918D7ED39003B67DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF60437B18D7ED39003B67DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF60437F18D7ED39003B67DB /* WhatsAppRecordVoice-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhatsAppRecordVoice-Info.plist"; sourceTree = "<group>"; };
+		EF60438118D7ED39003B67DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF60438318D7ED39003B67DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF60438518D7ED39003B67DB /* WhatsAppRecordVoice-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhatsAppRecordVoice-Prefix.pch"; sourceTree = "<group>"; };
+		EF60438618D7ED39003B67DB /* WARVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WARVAppDelegate.h; sourceTree = "<group>"; };
+		EF60438718D7ED39003B67DB /* WARVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WARVAppDelegate.m; sourceTree = "<group>"; };
+		EF60438A18D7ED39003B67DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF60438C18D7ED39003B67DB /* WARVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WARVViewController.h; sourceTree = "<group>"; };
+		EF60438D18D7ED39003B67DB /* WARVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WARVViewController.m; sourceTree = "<group>"; };
+		EF60438F18D7ED39003B67DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF60439518D7ED39003B67DB /* WhatsAppRecordVoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsAppRecordVoiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF60439618D7ED39003B67DB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EF60439E18D7ED39003B67DB /* WhatsAppRecordVoiceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhatsAppRecordVoiceTests-Info.plist"; sourceTree = "<group>"; };
+		EF6043A018D7ED39003B67DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF6043A218D7ED39003B67DB /* WhatsAppRecordVoiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhatsAppRecordVoiceTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF60437118D7ED39003B67DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF60437A18D7ED39003B67DB /* CoreGraphics.framework in Frameworks */,
+				EF60437C18D7ED39003B67DB /* UIKit.framework in Frameworks */,
+				EF60437818D7ED39003B67DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF60439218D7ED39003B67DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF60439718D7ED39003B67DB /* XCTest.framework in Frameworks */,
+				EF60439918D7ED39003B67DB /* UIKit.framework in Frameworks */,
+				EF60439818D7ED39003B67DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF60436B18D7ED39003B67DB = {
+			isa = PBXGroup;
+			children = (
+				EF60437D18D7ED39003B67DB /* WhatsAppRecordVoice */,
+				EF60439C18D7ED39003B67DB /* WhatsAppRecordVoiceTests */,
+				EF60437618D7ED39003B67DB /* Frameworks */,
+				EF60437518D7ED39003B67DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF60437518D7ED39003B67DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF60437418D7ED39003B67DB /* WhatsAppRecordVoice.app */,
+				EF60439518D7ED39003B67DB /* WhatsAppRecordVoiceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF60437618D7ED39003B67DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF60437718D7ED39003B67DB /* Foundation.framework */,
+				EF60437918D7ED39003B67DB /* CoreGraphics.framework */,
+				EF60437B18D7ED39003B67DB /* UIKit.framework */,
+				EF60439618D7ED39003B67DB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF60437D18D7ED39003B67DB /* WhatsAppRecordVoice */ = {
+			isa = PBXGroup;
+			children = (
+				EF60438618D7ED39003B67DB /* WARVAppDelegate.h */,
+				EF60438718D7ED39003B67DB /* WARVAppDelegate.m */,
+				EF60438918D7ED39003B67DB /* Main.storyboard */,
+				EF60438C18D7ED39003B67DB /* WARVViewController.h */,
+				EF60438D18D7ED39003B67DB /* WARVViewController.m */,
+				EF60438F18D7ED39003B67DB /* Images.xcassets */,
+				EF60437E18D7ED39003B67DB /* Supporting Files */,
+			);
+			path = WhatsAppRecordVoice;
+			sourceTree = "<group>";
+		};
+		EF60437E18D7ED39003B67DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF60437F18D7ED39003B67DB /* WhatsAppRecordVoice-Info.plist */,
+				EF60438018D7ED39003B67DB /* InfoPlist.strings */,
+				EF60438318D7ED39003B67DB /* main.m */,
+				EF60438518D7ED39003B67DB /* WhatsAppRecordVoice-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF60439C18D7ED39003B67DB /* WhatsAppRecordVoiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF6043A218D7ED39003B67DB /* WhatsAppRecordVoiceTests.m */,
+				EF60439D18D7ED39003B67DB /* Supporting Files */,
+			);
+			path = WhatsAppRecordVoiceTests;
+			sourceTree = "<group>";
+		};
+		EF60439D18D7ED39003B67DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF60439E18D7ED39003B67DB /* WhatsAppRecordVoiceTests-Info.plist */,
+				EF60439F18D7ED39003B67DB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF60437318D7ED39003B67DB /* WhatsAppRecordVoice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6043A618D7ED39003B67DB /* Build configuration list for PBXNativeTarget "WhatsAppRecordVoice" */;
+			buildPhases = (
+				EF60437018D7ED39003B67DB /* Sources */,
+				EF60437118D7ED39003B67DB /* Frameworks */,
+				EF60437218D7ED39003B67DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhatsAppRecordVoice;
+			productName = WhatsAppRecordVoice;
+			productReference = EF60437418D7ED39003B67DB /* WhatsAppRecordVoice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF60439418D7ED39003B67DB /* WhatsAppRecordVoiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6043A918D7ED39003B67DB /* Build configuration list for PBXNativeTarget "WhatsAppRecordVoiceTests" */;
+			buildPhases = (
+				EF60439118D7ED39003B67DB /* Sources */,
+				EF60439218D7ED39003B67DB /* Frameworks */,
+				EF60439318D7ED39003B67DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF60439B18D7ED39003B67DB /* PBXTargetDependency */,
+			);
+			name = WhatsAppRecordVoiceTests;
+			productName = WhatsAppRecordVoiceTests;
+			productReference = EF60439518D7ED39003B67DB /* WhatsAppRecordVoiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF60436C18D7ED39003B67DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WARV;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "谢进展";
+				TargetAttributes = {
+					EF60439418D7ED39003B67DB = {
+						TestTargetID = EF60437318D7ED39003B67DB;
+					};
+				};
+			};
+			buildConfigurationList = EF60436F18D7ED39003B67DB /* Build configuration list for PBXProject "WhatsAppRecordVoice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF60436B18D7ED39003B67DB;
+			productRefGroup = EF60437518D7ED39003B67DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF60437318D7ED39003B67DB /* WhatsAppRecordVoice */,
+				EF60439418D7ED39003B67DB /* WhatsAppRecordVoiceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF60437218D7ED39003B67DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF60439018D7ED39003B67DB /* Images.xcassets in Resources */,
+				EF60438218D7ED39003B67DB /* InfoPlist.strings in Resources */,
+				EF60438B18D7ED39003B67DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF60439318D7ED39003B67DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6043A118D7ED39003B67DB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF60437018D7ED39003B67DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF60438818D7ED39003B67DB /* WARVAppDelegate.m in Sources */,
+				EF60438E18D7ED39003B67DB /* WARVViewController.m in Sources */,
+				EF60438418D7ED39003B67DB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF60439118D7ED39003B67DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6043A318D7ED39003B67DB /* WhatsAppRecordVoiceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF60439B18D7ED39003B67DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF60437318D7ED39003B67DB /* WhatsAppRecordVoice */;
+			targetProxy = EF60439A18D7ED39003B67DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF60438018D7ED39003B67DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF60438118D7ED39003B67DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF60438918D7ED39003B67DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF60438A18D7ED39003B67DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF60439F18D7ED39003B67DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF6043A018D7ED39003B67DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF6043A418D7ED39003B67DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF6043A518D7ED39003B67DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF6043A718D7ED39003B67DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhatsAppRecordVoice/WhatsAppRecordVoice-Prefix.pch";
+				INFOPLIST_FILE = "WhatsAppRecordVoice/WhatsAppRecordVoice-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF6043A818D7ED39003B67DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhatsAppRecordVoice/WhatsAppRecordVoice-Prefix.pch";
+				INFOPLIST_FILE = "WhatsAppRecordVoice/WhatsAppRecordVoice-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EF6043AA18D7ED39003B67DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WhatsAppRecordVoice.app/WhatsAppRecordVoice";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhatsAppRecordVoice/WhatsAppRecordVoice-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WhatsAppRecordVoiceTests/WhatsAppRecordVoiceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EF6043AB18D7ED39003B67DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WhatsAppRecordVoice.app/WhatsAppRecordVoice";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhatsAppRecordVoice/WhatsAppRecordVoice-Prefix.pch";
+				INFOPLIST_FILE = "WhatsAppRecordVoiceTests/WhatsAppRecordVoiceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF60436F18D7ED39003B67DB /* Build configuration list for PBXProject "WhatsAppRecordVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6043A418D7ED39003B67DB /* Debug */,
+				EF6043A518D7ED39003B67DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6043A618D7ED39003B67DB /* Build configuration list for PBXNativeTarget "WhatsAppRecordVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6043A718D7ED39003B67DB /* Debug */,
+				EF6043A818D7ED39003B67DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF6043A918D7ED39003B67DB /* Build configuration list for PBXNativeTarget "WhatsAppRecordVoiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6043AA18D7ED39003B67DB /* Debug */,
+				EF6043AB18D7ED39003B67DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF60436C18D7ED39003B67DB /* Project object */;
+}
