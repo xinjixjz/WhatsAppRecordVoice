@@ -17,6 +17,7 @@
 #define kFloatRecordImageDownTime (0.5f)
 #define kFloatGarbageAnimationTime (.3f)
 #define kFloatGarbageBeginY (45.0f)
+#define kFloatCancelRecordingOffsetX  (100.0f)
 
 void setViewFixedAnchorPoint(CGPoint anchorPoint, UIView *view)
 {
@@ -166,7 +167,7 @@ void setViewFixedAnchorPoint(CGPoint anchorPoint, UIView *view)
 
     UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(other.frame.origin.x + other.frame.size.width + 10, 8.5, 230, 26)];
     textField.borderStyle = UITextBorderStyleRoundedRect;
-    self.textField.placeholder = @"说点什么把...";
+    self.textField.placeholder = @"说点什么吧...";
     [self addSubview:textField];
     self.textField = textField;
     
@@ -176,7 +177,7 @@ void setViewFixedAnchorPoint(CGPoint anchorPoint, UIView *view)
     [voice setFrame:CGRectMake(284, 0, 26, 45)];
     [voice addTarget:self action:@selector(beginRecord:forEvent:) forControlEvents:UIControlEventTouchDown];
     [voice addTarget:self action:@selector(mayCancelRecord:forEvent:) forControlEvents:UIControlEventTouchDragOutside | UIControlEventTouchDragInside];
-    [voice addTarget:self action:@selector(finshedRecord:forEvent:) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchCancel];
+    [voice addTarget:self action:@selector(finishedRecord:forEvent:) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchCancel | UIControlEventTouchUpOutside];
     [self addSubview:voice];
     self.voiceBtn = voice;
 }
@@ -207,14 +208,14 @@ void setViewFixedAnchorPoint(CGPoint anchorPoint, UIView *view)
         [(WARVSlideView *)self.slideView.contentView updateLocation:(curPoint.x - self.trackTouchPoint.x)];
     }
     self.trackTouchPoint = curPoint;
-    if ((self.firstTouchPoint.x - self.trackTouchPoint.x ) > 100) {
+    if ((self.firstTouchPoint.x - self.trackTouchPoint.x ) > kFloatCancelRecordingOffsetX) {
         self.isCanceling = YES;
         [btn cancelTrackingWithEvent:event];
         [self cancelRecord];
     }
 }
 
-- (void)finshedRecord:(UIButton *)btn forEvent:(UIEvent *)event
+- (void)finishedRecord:(UIButton *)btn forEvent:(UIEvent *)event
 {
     if (self.isCanceling) {
         return;
@@ -225,6 +226,8 @@ void setViewFixedAnchorPoint(CGPoint anchorPoint, UIView *view)
     }
 
     [self endRecord];
+    
+    self.recordBtn.hidden = YES;
 }
 
 - (void)cancelRecord
@@ -334,6 +337,7 @@ void setViewFixedAnchorPoint(CGPoint anchorPoint, UIView *view)
 - (void)showRecordImageView
 {
     self.recordBtn.alpha = 1.0;
+    self.recordBtn.hidden = NO;
     CGRect frame = self.recordBtn.frame;
     CGRect orgFrame = CGRectMake(CGRectGetMinX(self.voiceBtn.frame), frame.origin.y, frame.size.width, frame.size.height);
     self.recordBtn.frame = orgFrame;
@@ -346,8 +350,6 @@ void setViewFixedAnchorPoint(CGPoint anchorPoint, UIView *view)
     }];
 }
 
-
-
 - (void)endRecord
 {
     self.textField.hidden = NO;
@@ -356,16 +358,19 @@ void setViewFixedAnchorPoint(CGPoint anchorPoint, UIView *view)
     [self.recordBtn.layer removeAllAnimations];
     [self.recordBtn removeFromSuperview];
     self.recordBtn = nil;
+    
     [self.slideView removeFromSuperview];
     self.slideView = nil;
+    
     [self.timeLabel removeFromSuperview];
     self.timeLabel = nil;
+    
     [self.garbageImageView removeFromSuperview];
     self.garbageImageView = nil;
     
     [self.voiceBtn addTarget:self action:@selector(beginRecord:forEvent:) forControlEvents:UIControlEventTouchDown];
     [self.voiceBtn addTarget:self action:@selector(mayCancelRecord:forEvent:) forControlEvents:UIControlEventTouchDragOutside | UIControlEventTouchDragInside];
-    [self.voiceBtn addTarget:self action:@selector(finshedRecord:forEvent:) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchCancel];
+    [self.voiceBtn addTarget:self action:@selector(finishedRecord:forEvent:) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchCancel | UIControlEventTouchUpOutside];
     
     CGRect frame = self.otherBtn.frame;
     frame.origin.x -= 100;
