@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		EF22C74718D9D47600FC2DA5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF22C74618D9D47600FC2DA5 /* CoreText.framework */; };
+		EF22C74E18DB162000FC2DA5 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EF22C74B18DB162000FC2DA5 /* FBShimmeringLayer.m */; };
+		EF22C74F18DB162000FC2DA5 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF22C74D18DB162000FC2DA5 /* FBShimmeringView.m */; };
+		EF22C75218DB1B9500FC2DA5 /* BucketBodyTemplate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF22C75018DB1B9500FC2DA5 /* BucketBodyTemplate@2x.png */; };
+		EF22C75318DB1B9500FC2DA5 /* BucketLidTemplate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF22C75118DB1B9500FC2DA5 /* BucketLidTemplate@2x.png */; };
 		EF60437818D7ED39003B67DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF60437718D7ED39003B67DB /* Foundation.framework */; };
 		EF60437A18D7ED39003B67DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF60437918D7ED39003B67DB /* CoreGraphics.framework */; };
 		EF60437C18D7ED39003B67DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF60437B18D7ED39003B67DB /* UIKit.framework */; };
@@ -29,68 +33,6 @@
 		EF6043D318D7F1B1003B67DB /* bk.png in Resources */ = {isa = PBXBuildFile; fileRef = EF6043D218D7F1B1003B67DB /* bk.png */; };
 		EF6043D518D7F94E003B67DB /* SlideArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF6043D418D7F94E003B67DB /* SlideArrow@2x.png */; };
 		EF6043D718D82B2E003B67DB /* MicRecRed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF6043D618D82B2E003B67DB /* MicRecRed@2x.png */; };
-		EF60447618D85F06003B67DB /* UIButtonBarGarbageClose1.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60443818D85F06003B67DB /* UIButtonBarGarbageClose1.png */; };
-		EF60447718D85F06003B67DB /* UIButtonBarGarbageClose1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60443918D85F06003B67DB /* UIButtonBarGarbageClose1@2x.png */; };
-		EF60447818D85F06003B67DB /* UIButtonBarGarbageClose2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60443A18D85F06003B67DB /* UIButtonBarGarbageClose2.png */; };
-		EF60447918D85F06003B67DB /* UIButtonBarGarbageClose2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60443B18D85F06003B67DB /* UIButtonBarGarbageClose2@2x.png */; };
-		EF60447A18D85F06003B67DB /* UIButtonBarGarbageClose3.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60443C18D85F06003B67DB /* UIButtonBarGarbageClose3.png */; };
-		EF60447B18D85F06003B67DB /* UIButtonBarGarbageClose3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60443D18D85F06003B67DB /* UIButtonBarGarbageClose3@2x.png */; };
-		EF60447C18D85F06003B67DB /* UIButtonBarGarbageClose4.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60443E18D85F06003B67DB /* UIButtonBarGarbageClose4.png */; };
-		EF60447D18D85F06003B67DB /* UIButtonBarGarbageClose4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60443F18D85F06003B67DB /* UIButtonBarGarbageClose4@2x.png */; };
-		EF60447E18D85F06003B67DB /* UIButtonBarGarbageClose5.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60444018D85F06003B67DB /* UIButtonBarGarbageClose5.png */; };
-		EF60447F18D85F06003B67DB /* UIButtonBarGarbageClose5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60444118D85F06003B67DB /* UIButtonBarGarbageClose5@2x.png */; };
-		EF60448018D85F06003B67DB /* UIButtonBarGarbageClose6.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60444218D85F06003B67DB /* UIButtonBarGarbageClose6.png */; };
-		EF60448118D85F06003B67DB /* UIButtonBarGarbageClose6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60444318D85F06003B67DB /* UIButtonBarGarbageClose6@2x.png */; };
-		EF60448218D85F06003B67DB /* UIButtonBarGarbageClose7.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60444418D85F06003B67DB /* UIButtonBarGarbageClose7.png */; };
-		EF60448318D85F06003B67DB /* UIButtonBarGarbageClose7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60444518D85F06003B67DB /* UIButtonBarGarbageClose7@2x.png */; };
-		EF60448418D85F06003B67DB /* UIButtonBarGarbageClose8.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60444618D85F06003B67DB /* UIButtonBarGarbageClose8.png */; };
-		EF60448518D85F06003B67DB /* UIButtonBarGarbageClose8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60444718D85F06003B67DB /* UIButtonBarGarbageClose8@2x.png */; };
-		EF60448618D85F06003B67DB /* UIButtonBarGarbageClose9.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60444818D85F06003B67DB /* UIButtonBarGarbageClose9.png */; };
-		EF60448718D85F06003B67DB /* UIButtonBarGarbageClose9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60444918D85F06003B67DB /* UIButtonBarGarbageClose9@2x.png */; };
-		EF60448818D85F06003B67DB /* UIButtonBarGarbageClose10.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60444A18D85F06003B67DB /* UIButtonBarGarbageClose10.png */; };
-		EF60448918D85F06003B67DB /* UIButtonBarGarbageClose10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60444B18D85F06003B67DB /* UIButtonBarGarbageClose10@2x.png */; };
-		EF60448A18D85F06003B67DB /* UIButtonBarGarbageClose11.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60444C18D85F06003B67DB /* UIButtonBarGarbageClose11.png */; };
-		EF60448B18D85F06003B67DB /* UIButtonBarGarbageClose11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60444D18D85F06003B67DB /* UIButtonBarGarbageClose11@2x.png */; };
-		EF60448C18D85F06003B67DB /* UIButtonBarGarbageClose12.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60444E18D85F06003B67DB /* UIButtonBarGarbageClose12.png */; };
-		EF60448D18D85F06003B67DB /* UIButtonBarGarbageClose12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60444F18D85F06003B67DB /* UIButtonBarGarbageClose12@2x.png */; };
-		EF60448E18D85F06003B67DB /* UIButtonBarGarbageClose13.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60445018D85F06003B67DB /* UIButtonBarGarbageClose13.png */; };
-		EF60448F18D85F06003B67DB /* UIButtonBarGarbageClose13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60445118D85F06003B67DB /* UIButtonBarGarbageClose13@2x.png */; };
-		EF60449018D85F06003B67DB /* UIButtonBarGarbageClose14.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60445218D85F06003B67DB /* UIButtonBarGarbageClose14.png */; };
-		EF60449118D85F06003B67DB /* UIButtonBarGarbageClose14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60445318D85F06003B67DB /* UIButtonBarGarbageClose14@2x.png */; };
-		EF60449218D85F06003B67DB /* UIButtonBarGarbageClose15.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60445418D85F06003B67DB /* UIButtonBarGarbageClose15.png */; };
-		EF60449318D85F06003B67DB /* UIButtonBarGarbageClose15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60445518D85F06003B67DB /* UIButtonBarGarbageClose15@2x.png */; };
-		EF60449418D85F06003B67DB /* UIButtonBarGarbageClose16.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60445618D85F06003B67DB /* UIButtonBarGarbageClose16.png */; };
-		EF60449518D85F06003B67DB /* UIButtonBarGarbageClose16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60445718D85F06003B67DB /* UIButtonBarGarbageClose16@2x.png */; };
-		EF60449618D85F06003B67DB /* UIButtonBarGarbageOpen1.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60445818D85F06003B67DB /* UIButtonBarGarbageOpen1.png */; };
-		EF60449718D85F06003B67DB /* UIButtonBarGarbageOpen1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60445918D85F06003B67DB /* UIButtonBarGarbageOpen1@2x.png */; };
-		EF60449818D85F06003B67DB /* UIButtonBarGarbageOpen2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60445A18D85F06003B67DB /* UIButtonBarGarbageOpen2.png */; };
-		EF60449918D85F06003B67DB /* UIButtonBarGarbageOpen2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60445B18D85F06003B67DB /* UIButtonBarGarbageOpen2@2x.png */; };
-		EF60449A18D85F06003B67DB /* UIButtonBarGarbageOpen3.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60445C18D85F06003B67DB /* UIButtonBarGarbageOpen3.png */; };
-		EF60449B18D85F06003B67DB /* UIButtonBarGarbageOpen3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60445D18D85F06003B67DB /* UIButtonBarGarbageOpen3@2x.png */; };
-		EF60449C18D85F06003B67DB /* UIButtonBarGarbageOpen4.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60445E18D85F06003B67DB /* UIButtonBarGarbageOpen4.png */; };
-		EF60449D18D85F06003B67DB /* UIButtonBarGarbageOpen4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60445F18D85F06003B67DB /* UIButtonBarGarbageOpen4@2x.png */; };
-		EF60449E18D85F06003B67DB /* UIButtonBarGarbageOpen5.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60446018D85F06003B67DB /* UIButtonBarGarbageOpen5.png */; };
-		EF60449F18D85F06003B67DB /* UIButtonBarGarbageOpen5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60446118D85F06003B67DB /* UIButtonBarGarbageOpen5@2x.png */; };
-		EF6044A018D85F06003B67DB /* UIButtonBarGarbageOpen6.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60446218D85F06003B67DB /* UIButtonBarGarbageOpen6.png */; };
-		EF6044A118D85F06003B67DB /* UIButtonBarGarbageOpen6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60446318D85F06003B67DB /* UIButtonBarGarbageOpen6@2x.png */; };
-		EF6044A218D85F06003B67DB /* UIButtonBarGarbageOpen7.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60446418D85F06003B67DB /* UIButtonBarGarbageOpen7.png */; };
-		EF6044A318D85F06003B67DB /* UIButtonBarGarbageOpen7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60446518D85F06003B67DB /* UIButtonBarGarbageOpen7@2x.png */; };
-		EF6044A418D85F06003B67DB /* UIButtonBarGarbageOpen8.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60446618D85F06003B67DB /* UIButtonBarGarbageOpen8.png */; };
-		EF6044A518D85F06003B67DB /* UIButtonBarGarbageOpen8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60446718D85F06003B67DB /* UIButtonBarGarbageOpen8@2x.png */; };
-		EF6044A618D85F06003B67DB /* UIButtonBarGarbageOpen9.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60446818D85F06003B67DB /* UIButtonBarGarbageOpen9.png */; };
-		EF6044A718D85F06003B67DB /* UIButtonBarGarbageOpen9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60446918D85F06003B67DB /* UIButtonBarGarbageOpen9@2x.png */; };
-		EF6044A818D85F06003B67DB /* UIButtonBarGarbageOpen10.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60446A18D85F06003B67DB /* UIButtonBarGarbageOpen10.png */; };
-		EF6044A918D85F06003B67DB /* UIButtonBarGarbageOpen10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60446B18D85F06003B67DB /* UIButtonBarGarbageOpen10@2x.png */; };
-		EF6044AA18D85F06003B67DB /* UIButtonBarGarbageOpen11.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60446C18D85F06003B67DB /* UIButtonBarGarbageOpen11.png */; };
-		EF6044AB18D85F06003B67DB /* UIButtonBarGarbageOpen11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60446D18D85F06003B67DB /* UIButtonBarGarbageOpen11@2x.png */; };
-		EF6044AC18D85F06003B67DB /* UIButtonBarGarbageOpen12.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60446E18D85F06003B67DB /* UIButtonBarGarbageOpen12.png */; };
-		EF6044AD18D85F06003B67DB /* UIButtonBarGarbageOpen12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60446F18D85F06003B67DB /* UIButtonBarGarbageOpen12@2x.png */; };
-		EF6044AE18D85F06003B67DB /* UIButtonBarGarbageOpen13.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60447018D85F06003B67DB /* UIButtonBarGarbageOpen13.png */; };
-		EF6044AF18D85F06003B67DB /* UIButtonBarGarbageOpen13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60447118D85F06003B67DB /* UIButtonBarGarbageOpen13@2x.png */; };
-		EF6044B018D85F06003B67DB /* UIButtonBarGarbageOpen14.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60447218D85F06003B67DB /* UIButtonBarGarbageOpen14.png */; };
-		EF6044B118D85F06003B67DB /* UIButtonBarGarbageOpen14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60447318D85F06003B67DB /* UIButtonBarGarbageOpen14@2x.png */; };
-		EF6044B218D85F06003B67DB /* UIButtonBarGarbageOpen15.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60447418D85F06003B67DB /* UIButtonBarGarbageOpen15.png */; };
-		EF6044B318D85F06003B67DB /* UIButtonBarGarbageOpen15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60447518D85F06003B67DB /* UIButtonBarGarbageOpen15@2x.png */; };
 		EF6044B618D866BE003B67DB /* MicRecBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = EF6044B418D866BE003B67DB /* MicRecBtn.png */; };
 		EF6044B718D866BE003B67DB /* MicRecBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF6044B518D866BE003B67DB /* MicRecBtn@2x.png */; };
 /* End PBXBuildFile section */
@@ -107,6 +49,13 @@
 
 /* Begin PBXFileReference section */
 		EF22C74618D9D47600FC2DA5 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		EF22C74918DB162000FC2DA5 /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
+		EF22C74A18DB162000FC2DA5 /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringLayer.h; sourceTree = "<group>"; };
+		EF22C74B18DB162000FC2DA5 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
+		EF22C74C18DB162000FC2DA5 /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
+		EF22C74D18DB162000FC2DA5 /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
+		EF22C75018DB1B9500FC2DA5 /* BucketBodyTemplate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BucketBodyTemplate@2x.png"; sourceTree = "<group>"; };
+		EF22C75118DB1B9500FC2DA5 /* BucketLidTemplate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BucketLidTemplate@2x.png"; sourceTree = "<group>"; };
 		EF60437418D7ED39003B67DB /* WhatsAppRecordVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsAppRecordVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF60437718D7ED39003B67DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF60437918D7ED39003B67DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -134,68 +83,6 @@
 		EF6043D218D7F1B1003B67DB /* bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk.png; sourceTree = "<group>"; };
 		EF6043D418D7F94E003B67DB /* SlideArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SlideArrow@2x.png"; sourceTree = "<group>"; };
 		EF6043D618D82B2E003B67DB /* MicRecRed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MicRecRed@2x.png"; sourceTree = "<group>"; };
-		EF60443818D85F06003B67DB /* UIButtonBarGarbageClose1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageClose1.png; sourceTree = "<group>"; };
-		EF60443918D85F06003B67DB /* UIButtonBarGarbageClose1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageClose1@2x.png"; sourceTree = "<group>"; };
-		EF60443A18D85F06003B67DB /* UIButtonBarGarbageClose2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageClose2.png; sourceTree = "<group>"; };
-		EF60443B18D85F06003B67DB /* UIButtonBarGarbageClose2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageClose2@2x.png"; sourceTree = "<group>"; };
-		EF60443C18D85F06003B67DB /* UIButtonBarGarbageClose3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageClose3.png; sourceTree = "<group>"; };
-		EF60443D18D85F06003B67DB /* UIButtonBarGarbageClose3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageClose3@2x.png"; sourceTree = "<group>"; };
-		EF60443E18D85F06003B67DB /* UIButtonBarGarbageClose4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageClose4.png; sourceTree = "<group>"; };
-		EF60443F18D85F06003B67DB /* UIButtonBarGarbageClose4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageClose4@2x.png"; sourceTree = "<group>"; };
-		EF60444018D85F06003B67DB /* UIButtonBarGarbageClose5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageClose5.png; sourceTree = "<group>"; };
-		EF60444118D85F06003B67DB /* UIButtonBarGarbageClose5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageClose5@2x.png"; sourceTree = "<group>"; };
-		EF60444218D85F06003B67DB /* UIButtonBarGarbageClose6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageClose6.png; sourceTree = "<group>"; };
-		EF60444318D85F06003B67DB /* UIButtonBarGarbageClose6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageClose6@2x.png"; sourceTree = "<group>"; };
-		EF60444418D85F06003B67DB /* UIButtonBarGarbageClose7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageClose7.png; sourceTree = "<group>"; };
-		EF60444518D85F06003B67DB /* UIButtonBarGarbageClose7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageClose7@2x.png"; sourceTree = "<group>"; };
-		EF60444618D85F06003B67DB /* UIButtonBarGarbageClose8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageClose8.png; sourceTree = "<group>"; };
-		EF60444718D85F06003B67DB /* UIButtonBarGarbageClose8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageClose8@2x.png"; sourceTree = "<group>"; };
-		EF60444818D85F06003B67DB /* UIButtonBarGarbageClose9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageClose9.png; sourceTree = "<group>"; };
-		EF60444918D85F06003B67DB /* UIButtonBarGarbageClose9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageClose9@2x.png"; sourceTree = "<group>"; };
-		EF60444A18D85F06003B67DB /* UIButtonBarGarbageClose10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageClose10.png; sourceTree = "<group>"; };
-		EF60444B18D85F06003B67DB /* UIButtonBarGarbageClose10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageClose10@2x.png"; sourceTree = "<group>"; };
-		EF60444C18D85F06003B67DB /* UIButtonBarGarbageClose11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageClose11.png; sourceTree = "<group>"; };
-		EF60444D18D85F06003B67DB /* UIButtonBarGarbageClose11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageClose11@2x.png"; sourceTree = "<group>"; };
-		EF60444E18D85F06003B67DB /* UIButtonBarGarbageClose12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageClose12.png; sourceTree = "<group>"; };
-		EF60444F18D85F06003B67DB /* UIButtonBarGarbageClose12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageClose12@2x.png"; sourceTree = "<group>"; };
-		EF60445018D85F06003B67DB /* UIButtonBarGarbageClose13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageClose13.png; sourceTree = "<group>"; };
-		EF60445118D85F06003B67DB /* UIButtonBarGarbageClose13@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageClose13@2x.png"; sourceTree = "<group>"; };
-		EF60445218D85F06003B67DB /* UIButtonBarGarbageClose14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageClose14.png; sourceTree = "<group>"; };
-		EF60445318D85F06003B67DB /* UIButtonBarGarbageClose14@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageClose14@2x.png"; sourceTree = "<group>"; };
-		EF60445418D85F06003B67DB /* UIButtonBarGarbageClose15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageClose15.png; sourceTree = "<group>"; };
-		EF60445518D85F06003B67DB /* UIButtonBarGarbageClose15@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageClose15@2x.png"; sourceTree = "<group>"; };
-		EF60445618D85F06003B67DB /* UIButtonBarGarbageClose16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageClose16.png; sourceTree = "<group>"; };
-		EF60445718D85F06003B67DB /* UIButtonBarGarbageClose16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageClose16@2x.png"; sourceTree = "<group>"; };
-		EF60445818D85F06003B67DB /* UIButtonBarGarbageOpen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageOpen1.png; sourceTree = "<group>"; };
-		EF60445918D85F06003B67DB /* UIButtonBarGarbageOpen1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageOpen1@2x.png"; sourceTree = "<group>"; };
-		EF60445A18D85F06003B67DB /* UIButtonBarGarbageOpen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageOpen2.png; sourceTree = "<group>"; };
-		EF60445B18D85F06003B67DB /* UIButtonBarGarbageOpen2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageOpen2@2x.png"; sourceTree = "<group>"; };
-		EF60445C18D85F06003B67DB /* UIButtonBarGarbageOpen3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageOpen3.png; sourceTree = "<group>"; };
-		EF60445D18D85F06003B67DB /* UIButtonBarGarbageOpen3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageOpen3@2x.png"; sourceTree = "<group>"; };
-		EF60445E18D85F06003B67DB /* UIButtonBarGarbageOpen4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageOpen4.png; sourceTree = "<group>"; };
-		EF60445F18D85F06003B67DB /* UIButtonBarGarbageOpen4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageOpen4@2x.png"; sourceTree = "<group>"; };
-		EF60446018D85F06003B67DB /* UIButtonBarGarbageOpen5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageOpen5.png; sourceTree = "<group>"; };
-		EF60446118D85F06003B67DB /* UIButtonBarGarbageOpen5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageOpen5@2x.png"; sourceTree = "<group>"; };
-		EF60446218D85F06003B67DB /* UIButtonBarGarbageOpen6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageOpen6.png; sourceTree = "<group>"; };
-		EF60446318D85F06003B67DB /* UIButtonBarGarbageOpen6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageOpen6@2x.png"; sourceTree = "<group>"; };
-		EF60446418D85F06003B67DB /* UIButtonBarGarbageOpen7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageOpen7.png; sourceTree = "<group>"; };
-		EF60446518D85F06003B67DB /* UIButtonBarGarbageOpen7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageOpen7@2x.png"; sourceTree = "<group>"; };
-		EF60446618D85F06003B67DB /* UIButtonBarGarbageOpen8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageOpen8.png; sourceTree = "<group>"; };
-		EF60446718D85F06003B67DB /* UIButtonBarGarbageOpen8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageOpen8@2x.png"; sourceTree = "<group>"; };
-		EF60446818D85F06003B67DB /* UIButtonBarGarbageOpen9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageOpen9.png; sourceTree = "<group>"; };
-		EF60446918D85F06003B67DB /* UIButtonBarGarbageOpen9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageOpen9@2x.png"; sourceTree = "<group>"; };
-		EF60446A18D85F06003B67DB /* UIButtonBarGarbageOpen10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageOpen10.png; sourceTree = "<group>"; };
-		EF60446B18D85F06003B67DB /* UIButtonBarGarbageOpen10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageOpen10@2x.png"; sourceTree = "<group>"; };
-		EF60446C18D85F06003B67DB /* UIButtonBarGarbageOpen11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageOpen11.png; sourceTree = "<group>"; };
-		EF60446D18D85F06003B67DB /* UIButtonBarGarbageOpen11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageOpen11@2x.png"; sourceTree = "<group>"; };
-		EF60446E18D85F06003B67DB /* UIButtonBarGarbageOpen12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageOpen12.png; sourceTree = "<group>"; };
-		EF60446F18D85F06003B67DB /* UIButtonBarGarbageOpen12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageOpen12@2x.png"; sourceTree = "<group>"; };
-		EF60447018D85F06003B67DB /* UIButtonBarGarbageOpen13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageOpen13.png; sourceTree = "<group>"; };
-		EF60447118D85F06003B67DB /* UIButtonBarGarbageOpen13@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageOpen13@2x.png"; sourceTree = "<group>"; };
-		EF60447218D85F06003B67DB /* UIButtonBarGarbageOpen14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageOpen14.png; sourceTree = "<group>"; };
-		EF60447318D85F06003B67DB /* UIButtonBarGarbageOpen14@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageOpen14@2x.png"; sourceTree = "<group>"; };
-		EF60447418D85F06003B67DB /* UIButtonBarGarbageOpen15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIButtonBarGarbageOpen15.png; sourceTree = "<group>"; };
-		EF60447518D85F06003B67DB /* UIButtonBarGarbageOpen15@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarGarbageOpen15@2x.png"; sourceTree = "<group>"; };
 		EF6044B418D866BE003B67DB /* MicRecBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MicRecBtn.png; sourceTree = "<group>"; };
 		EF6044B518D866BE003B67DB /* MicRecBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MicRecBtn@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,6 +112,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF22C74818DB162000FC2DA5 /* FBShimmering */ = {
+			isa = PBXGroup;
+			children = (
+				EF22C74918DB162000FC2DA5 /* FBShimmering.h */,
+				EF22C74A18DB162000FC2DA5 /* FBShimmeringLayer.h */,
+				EF22C74B18DB162000FC2DA5 /* FBShimmeringLayer.m */,
+				EF22C74C18DB162000FC2DA5 /* FBShimmeringView.h */,
+				EF22C74D18DB162000FC2DA5 /* FBShimmeringView.m */,
+			);
+			path = FBShimmering;
+			sourceTree = "<group>";
+		};
 		EF60436B18D7ED39003B67DB = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +158,7 @@
 		EF60437D18D7ED39003B67DB /* WhatsAppRecordVoice */ = {
 			isa = PBXGroup;
 			children = (
+				EF22C74818DB162000FC2DA5 /* FBShimmering */,
 				EF6043AC18D7EE26003B67DB /* resources */,
 				EF60438618D7ED39003B67DB /* WARVAppDelegate.h */,
 				EF60438718D7ED39003B67DB /* WARVAppDelegate.m */,
@@ -305,68 +205,8 @@
 		EF6043AC18D7EE26003B67DB /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				EF60443818D85F06003B67DB /* UIButtonBarGarbageClose1.png */,
-				EF60443918D85F06003B67DB /* UIButtonBarGarbageClose1@2x.png */,
-				EF60443A18D85F06003B67DB /* UIButtonBarGarbageClose2.png */,
-				EF60443B18D85F06003B67DB /* UIButtonBarGarbageClose2@2x.png */,
-				EF60443C18D85F06003B67DB /* UIButtonBarGarbageClose3.png */,
-				EF60443D18D85F06003B67DB /* UIButtonBarGarbageClose3@2x.png */,
-				EF60443E18D85F06003B67DB /* UIButtonBarGarbageClose4.png */,
-				EF60443F18D85F06003B67DB /* UIButtonBarGarbageClose4@2x.png */,
-				EF60444018D85F06003B67DB /* UIButtonBarGarbageClose5.png */,
-				EF60444118D85F06003B67DB /* UIButtonBarGarbageClose5@2x.png */,
-				EF60444218D85F06003B67DB /* UIButtonBarGarbageClose6.png */,
-				EF60444318D85F06003B67DB /* UIButtonBarGarbageClose6@2x.png */,
-				EF60444418D85F06003B67DB /* UIButtonBarGarbageClose7.png */,
-				EF60444518D85F06003B67DB /* UIButtonBarGarbageClose7@2x.png */,
-				EF60444618D85F06003B67DB /* UIButtonBarGarbageClose8.png */,
-				EF60444718D85F06003B67DB /* UIButtonBarGarbageClose8@2x.png */,
-				EF60444818D85F06003B67DB /* UIButtonBarGarbageClose9.png */,
-				EF60444918D85F06003B67DB /* UIButtonBarGarbageClose9@2x.png */,
-				EF60444A18D85F06003B67DB /* UIButtonBarGarbageClose10.png */,
-				EF60444B18D85F06003B67DB /* UIButtonBarGarbageClose10@2x.png */,
-				EF60444C18D85F06003B67DB /* UIButtonBarGarbageClose11.png */,
-				EF60444D18D85F06003B67DB /* UIButtonBarGarbageClose11@2x.png */,
-				EF60444E18D85F06003B67DB /* UIButtonBarGarbageClose12.png */,
-				EF60444F18D85F06003B67DB /* UIButtonBarGarbageClose12@2x.png */,
-				EF60445018D85F06003B67DB /* UIButtonBarGarbageClose13.png */,
-				EF60445118D85F06003B67DB /* UIButtonBarGarbageClose13@2x.png */,
-				EF60445218D85F06003B67DB /* UIButtonBarGarbageClose14.png */,
-				EF60445318D85F06003B67DB /* UIButtonBarGarbageClose14@2x.png */,
-				EF60445418D85F06003B67DB /* UIButtonBarGarbageClose15.png */,
-				EF60445518D85F06003B67DB /* UIButtonBarGarbageClose15@2x.png */,
-				EF60445618D85F06003B67DB /* UIButtonBarGarbageClose16.png */,
-				EF60445718D85F06003B67DB /* UIButtonBarGarbageClose16@2x.png */,
-				EF60445818D85F06003B67DB /* UIButtonBarGarbageOpen1.png */,
-				EF60445918D85F06003B67DB /* UIButtonBarGarbageOpen1@2x.png */,
-				EF60445A18D85F06003B67DB /* UIButtonBarGarbageOpen2.png */,
-				EF60445B18D85F06003B67DB /* UIButtonBarGarbageOpen2@2x.png */,
-				EF60445C18D85F06003B67DB /* UIButtonBarGarbageOpen3.png */,
-				EF60445D18D85F06003B67DB /* UIButtonBarGarbageOpen3@2x.png */,
-				EF60445E18D85F06003B67DB /* UIButtonBarGarbageOpen4.png */,
-				EF60445F18D85F06003B67DB /* UIButtonBarGarbageOpen4@2x.png */,
-				EF60446018D85F06003B67DB /* UIButtonBarGarbageOpen5.png */,
-				EF60446118D85F06003B67DB /* UIButtonBarGarbageOpen5@2x.png */,
-				EF60446218D85F06003B67DB /* UIButtonBarGarbageOpen6.png */,
-				EF60446318D85F06003B67DB /* UIButtonBarGarbageOpen6@2x.png */,
-				EF60446418D85F06003B67DB /* UIButtonBarGarbageOpen7.png */,
-				EF60446518D85F06003B67DB /* UIButtonBarGarbageOpen7@2x.png */,
-				EF60446618D85F06003B67DB /* UIButtonBarGarbageOpen8.png */,
-				EF60446718D85F06003B67DB /* UIButtonBarGarbageOpen8@2x.png */,
-				EF60446818D85F06003B67DB /* UIButtonBarGarbageOpen9.png */,
-				EF60446918D85F06003B67DB /* UIButtonBarGarbageOpen9@2x.png */,
-				EF60446A18D85F06003B67DB /* UIButtonBarGarbageOpen10.png */,
-				EF60446B18D85F06003B67DB /* UIButtonBarGarbageOpen10@2x.png */,
-				EF60446C18D85F06003B67DB /* UIButtonBarGarbageOpen11.png */,
-				EF60446D18D85F06003B67DB /* UIButtonBarGarbageOpen11@2x.png */,
-				EF60446E18D85F06003B67DB /* UIButtonBarGarbageOpen12.png */,
-				EF60446F18D85F06003B67DB /* UIButtonBarGarbageOpen12@2x.png */,
-				EF60447018D85F06003B67DB /* UIButtonBarGarbageOpen13.png */,
-				EF60447118D85F06003B67DB /* UIButtonBarGarbageOpen13@2x.png */,
-				EF60447218D85F06003B67DB /* UIButtonBarGarbageOpen14.png */,
-				EF60447318D85F06003B67DB /* UIButtonBarGarbageOpen14@2x.png */,
-				EF60447418D85F06003B67DB /* UIButtonBarGarbageOpen15.png */,
-				EF60447518D85F06003B67DB /* UIButtonBarGarbageOpen15@2x.png */,
+				EF22C75018DB1B9500FC2DA5 /* BucketBodyTemplate@2x.png */,
+				EF22C75118DB1B9500FC2DA5 /* BucketLidTemplate@2x.png */,
 				EF6043D218D7F1B1003B67DB /* bk.png */,
 				EF6043D418D7F94E003B67DB /* SlideArrow@2x.png */,
 				EF6044B418D866BE003B67DB /* MicRecBtn.png */,
@@ -456,77 +296,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF6044A918D85F06003B67DB /* UIButtonBarGarbageOpen10@2x.png in Resources */,
-				EF6044B318D85F06003B67DB /* UIButtonBarGarbageOpen15@2x.png in Resources */,
-				EF60449918D85F06003B67DB /* UIButtonBarGarbageOpen2@2x.png in Resources */,
-				EF60449E18D85F06003B67DB /* UIButtonBarGarbageOpen5.png in Resources */,
-				EF6044A318D85F06003B67DB /* UIButtonBarGarbageOpen7@2x.png in Resources */,
+				EF22C75318DB1B9500FC2DA5 /* BucketLidTemplate@2x.png in Resources */,
 				EF6043D518D7F94E003B67DB /* SlideArrow@2x.png in Resources */,
-				EF60449118D85F06003B67DB /* UIButtonBarGarbageClose14@2x.png in Resources */,
-				EF60448C18D85F06003B67DB /* UIButtonBarGarbageClose12.png in Resources */,
-				EF6044AA18D85F06003B67DB /* UIButtonBarGarbageOpen11.png in Resources */,
-				EF60448F18D85F06003B67DB /* UIButtonBarGarbageClose13@2x.png in Resources */,
-				EF60449218D85F06003B67DB /* UIButtonBarGarbageClose15.png in Resources */,
-				EF6044A218D85F06003B67DB /* UIButtonBarGarbageOpen7.png in Resources */,
-				EF60449418D85F06003B67DB /* UIButtonBarGarbageClose16.png in Resources */,
-				EF60449318D85F06003B67DB /* UIButtonBarGarbageClose15@2x.png in Resources */,
-				EF60447C18D85F06003B67DB /* UIButtonBarGarbageClose4.png in Resources */,
-				EF60447D18D85F06003B67DB /* UIButtonBarGarbageClose4@2x.png in Resources */,
-				EF60448718D85F06003B67DB /* UIButtonBarGarbageClose9@2x.png in Resources */,
-				EF60448B18D85F06003B67DB /* UIButtonBarGarbageClose11@2x.png in Resources */,
-				EF60449518D85F06003B67DB /* UIButtonBarGarbageClose16@2x.png in Resources */,
-				EF60449018D85F06003B67DB /* UIButtonBarGarbageClose14.png in Resources */,
-				EF60447718D85F06003B67DB /* UIButtonBarGarbageClose1@2x.png in Resources */,
-				EF6044AF18D85F06003B67DB /* UIButtonBarGarbageOpen13@2x.png in Resources */,
 				EF6043BC18D7EE26003B67DB /* Default-iOS7@2x.png in Resources */,
-				EF60447818D85F06003B67DB /* UIButtonBarGarbageClose2.png in Resources */,
-				EF60447E18D85F06003B67DB /* UIButtonBarGarbageClose5.png in Resources */,
+				EF22C75218DB1B9500FC2DA5 /* BucketBodyTemplate@2x.png in Resources */,
 				EF6044B718D866BE003B67DB /* MicRecBtn@2x.png in Resources */,
-				EF60447F18D85F06003B67DB /* UIButtonBarGarbageClose5@2x.png in Resources */,
-				EF60449718D85F06003B67DB /* UIButtonBarGarbageOpen1@2x.png in Resources */,
-				EF60447B18D85F06003B67DB /* UIButtonBarGarbageClose3@2x.png in Resources */,
-				EF60449618D85F06003B67DB /* UIButtonBarGarbageOpen1.png in Resources */,
 				EF6043CE18D7EF0F003B67DB /* ButtonMic7@2x.png in Resources */,
-				EF6044AC18D85F06003B67DB /* UIButtonBarGarbageOpen12.png in Resources */,
 				EF6044B618D866BE003B67DB /* MicRecBtn.png in Resources */,
-				EF6044A818D85F06003B67DB /* UIButtonBarGarbageOpen10.png in Resources */,
-				EF6044B218D85F06003B67DB /* UIButtonBarGarbageOpen15.png in Resources */,
-				EF6044AB18D85F06003B67DB /* UIButtonBarGarbageOpen11@2x.png in Resources */,
-				EF60449818D85F06003B67DB /* UIButtonBarGarbageOpen2.png in Resources */,
-				EF60448918D85F06003B67DB /* UIButtonBarGarbageClose10@2x.png in Resources */,
-				EF60448818D85F06003B67DB /* UIButtonBarGarbageClose10.png in Resources */,
 				EF60439018D7ED39003B67DB /* Images.xcassets in Resources */,
-				EF6044AD18D85F06003B67DB /* UIButtonBarGarbageOpen12@2x.png in Resources */,
-				EF60448018D85F06003B67DB /* UIButtonBarGarbageClose6.png in Resources */,
-				EF60449C18D85F06003B67DB /* UIButtonBarGarbageOpen4.png in Resources */,
 				EF60438218D7ED39003B67DB /* InfoPlist.strings in Resources */,
-				EF6044A618D85F06003B67DB /* UIButtonBarGarbageOpen9.png in Resources */,
-				EF60449B18D85F06003B67DB /* UIButtonBarGarbageOpen3@2x.png in Resources */,
-				EF60448518D85F06003B67DB /* UIButtonBarGarbageClose8@2x.png in Resources */,
-				EF6044A518D85F06003B67DB /* UIButtonBarGarbageOpen8@2x.png in Resources */,
-				EF60447918D85F06003B67DB /* UIButtonBarGarbageClose2@2x.png in Resources */,
-				EF60449A18D85F06003B67DB /* UIButtonBarGarbageOpen3.png in Resources */,
-				EF60447A18D85F06003B67DB /* UIButtonBarGarbageClose3.png in Resources */,
-				EF60448618D85F06003B67DB /* UIButtonBarGarbageClose9.png in Resources */,
-				EF6044A118D85F06003B67DB /* UIButtonBarGarbageOpen6@2x.png in Resources */,
-				EF6044A418D85F06003B67DB /* UIButtonBarGarbageOpen8.png in Resources */,
-				EF6044A718D85F06003B67DB /* UIButtonBarGarbageOpen9@2x.png in Resources */,
-				EF60448E18D85F06003B67DB /* UIButtonBarGarbageClose13.png in Resources */,
-				EF6044A018D85F06003B67DB /* UIButtonBarGarbageOpen6.png in Resources */,
-				EF60448118D85F06003B67DB /* UIButtonBarGarbageClose6@2x.png in Resources */,
-				EF6044B018D85F06003B67DB /* UIButtonBarGarbageOpen14.png in Resources */,
-				EF6044AE18D85F06003B67DB /* UIButtonBarGarbageOpen13.png in Resources */,
-				EF60448218D85F06003B67DB /* UIButtonBarGarbageClose7.png in Resources */,
-				EF60449F18D85F06003B67DB /* UIButtonBarGarbageOpen5@2x.png in Resources */,
-				EF60448318D85F06003B67DB /* UIButtonBarGarbageClose7@2x.png in Resources */,
 				EF6043D718D82B2E003B67DB /* MicRecRed@2x.png in Resources */,
-				EF60448D18D85F06003B67DB /* UIButtonBarGarbageClose12@2x.png in Resources */,
-				EF60447618D85F06003B67DB /* UIButtonBarGarbageClose1.png in Resources */,
-				EF60449D18D85F06003B67DB /* UIButtonBarGarbageOpen4@2x.png in Resources */,
 				EF6043D318D7F1B1003B67DB /* bk.png in Resources */,
-				EF60448A18D85F06003B67DB /* UIButtonBarGarbageClose11.png in Resources */,
-				EF6044B118D85F06003B67DB /* UIButtonBarGarbageOpen14@2x.png in Resources */,
-				EF60448418D85F06003B67DB /* UIButtonBarGarbageClose8.png in Resources */,
 				EF6043CD18D7EF0F003B67DB /* ButtonAttachMedia7@2x.png in Resources */,
 				EF60438B18D7ED39003B67DB /* Main.storyboard in Resources */,
 			);
@@ -548,7 +328,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF60438818D7ED39003B67DB /* WARVAppDelegate.m in Sources */,
+				EF22C74F18DB162000FC2DA5 /* FBShimmeringView.m in Sources */,
 				EF6043D118D7EF32003B67DB /* WARVChatPanelView.m in Sources */,
+				EF22C74E18DB162000FC2DA5 /* FBShimmeringLayer.m in Sources */,
 				EF60438E18D7ED39003B67DB /* WARVViewController.m in Sources */,
 				EF60438418D7ED39003B67DB /* main.m in Sources */,
 			);

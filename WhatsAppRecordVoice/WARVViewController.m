@@ -62,12 +62,11 @@
 - (void)chatPanelViewShouldBeginRecord:(WARVChatPanelView *)view
 {
     //prepare for recording ..
-    [NSThread sleepForTimeInterval:0.3];
-    [view didBeginRecord];
-    
-    //for test
-    [[NSRunLoop currentRunLoop] addTimer:self.testRecordTimer forMode:NSDefaultRunLoopMode];
-    [self.testRecordTimer fire];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [view didBeginRecord];
+        [[NSRunLoop currentRunLoop] addTimer:self.testRecordTimer forMode:NSDefaultRunLoopMode];
+        [self.testRecordTimer fire];
+    });
 }
 
 - (void)invalidateTestTimer
