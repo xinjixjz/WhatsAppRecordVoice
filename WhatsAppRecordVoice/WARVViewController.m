@@ -39,7 +39,6 @@
 {
     if (!_testRecordTimer) {
         _testRecordTimer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(updateRecordTime:) userInfo:nil repeats:YES];
-        self.testSeconds = YES;
     }
     return _testRecordTimer;
 }
@@ -55,7 +54,7 @@
     else{
         secondStr = [NSString stringWithFormat:@"%lu",(unsigned long)sec];
     }
-    NSString *mims = [NSString stringWithFormat:@"%lu",self.testSeconds / 60];
+    NSString *mims = [NSString stringWithFormat:@"%lu",self.testSeconds / (unsigned long)60];
     [self.chatPanelView updateTime:[NSString stringWithFormat:@"%@:%@",mims,secondStr]];
 }
 
