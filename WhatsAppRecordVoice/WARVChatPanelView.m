@@ -414,7 +414,7 @@ void setViewFixedAnchorPoint(CGPoint anchorPoint, UIView *view)
     if (!_timeLabel) {
         _timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(43, 0, 81, 45)];
         _timeLabel.textColor = [UIColor blackColor];
-        _timeLabel.font = [UIFont boldSystemFontOfSize:17.0f];
+        _timeLabel.font = [UIFont systemFontOfSize:17.0f];
         [self addSubview:_timeLabel];
     }
     return _timeLabel;
