@@ -6,8 +6,6 @@
 //  Copyright (c) 2014年 xjz. All rights reserved.
 //
 
-///wangzijuan@baidu.com
-
 #import "WARVChatPanelView.h"
 #import <CoreText/CoreText.h>
 #import "FBShimmeringView.h"
