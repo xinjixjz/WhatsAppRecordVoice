@@ -36,9 +36,6 @@
 //you should call this method when you have prepared for record
 - (void)didBeginRecord;
 
-//update record time
-- (void)updateTime:(NSString *)time;
-
 //delegate
 @property (nonatomic, weak) id<WARVChatPanelViewDelegate> delegate;
 

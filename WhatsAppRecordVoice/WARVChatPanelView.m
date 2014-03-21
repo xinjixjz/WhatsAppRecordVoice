@@ -136,6 +136,8 @@ void setViewFixedAnchorPoint(CGPoint anchorPoint, UIView *view)
 @property (nonatomic, strong) WARVGarbageView *garbageImageView;
 @property (nonatomic, assign) BOOL canCancelAnimation;
 @property (nonatomic, assign) BOOL isCanceling;
+@property (nonatomic, strong) NSTimer *countTimer;
+@property (nonatomic, assign) NSUInteger currentSeconds;
 
 @end
 
@@ -355,6 +357,7 @@ void setViewFixedAnchorPoint(CGPoint anchorPoint, UIView *view)
     self.textField.hidden = NO;
     self.isCanceling = NO;
     self.canCancelAnimation = NO;
+    [self invalidateCountTimer];
     
     if (_recordBtn) {
         [self.recordBtn.layer removeAllAnimations];
@@ -470,13 +473,45 @@ void setViewFixedAnchorPoint(CGPoint anchorPoint, UIView *view)
 - (void)didBeginRecord
 {
     self.canCancelAnimation = YES;
-    [self timeLabel];
+    [self startCountTimer];
     [self showRecordImageViewGradient];
 }
 
-- (void)updateTime:(NSString *)time
+- (NSTimer *)countTimer
 {
-    self.timeLabel.text = time;
+    if (!_countTimer) {
+        _countTimer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(updateRecordTime:) userInfo:nil repeats:YES];
+    }
+    return _countTimer;
+}
+
+- (void)invalidateCountTimer
+{
+    self.currentSeconds = 0;
+    [_countTimer invalidate];
+    self.countTimer = nil;
+}
+
+- (void)startCountTimer
+{
+    self.currentSeconds = 0;
+    [[NSRunLoop currentRunLoop] addTimer:self.countTimer forMode:NSDefaultRunLoopMode];
+    [self.countTimer fire];
+}
+
+- (void)updateRecordTime:(NSTimer *)timer
+{
+    self.currentSeconds++;
+    NSUInteger sec = self.currentSeconds % 60;
+    NSString *secondStr = nil;
+    if (sec < 10) {
+        secondStr = [NSString stringWithFormat:@"0%lu",(unsigned long)sec];
+    }
+    else{
+        secondStr = [NSString stringWithFormat:@"%lu",(unsigned long)sec];
+    }
+    NSString *mims = [NSString stringWithFormat:@"%lu",self.currentSeconds / (unsigned long)60];
+    self.timeLabel.text = [NSString stringWithFormat:@"%@:%@",mims,secondStr];
 }
 
 /*
