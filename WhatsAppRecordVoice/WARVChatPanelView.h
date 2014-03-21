@@ -8,14 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
+/*
+ WARVChatPanelView *view = [[WARVChatPanelView alloc] init];
+ view.delegate = delegate;
+ [view showInView:superView];
+ */
+
 @class WARVChatPanelView;
 
 @protocol WARVChatPanelViewDelegate <NSObject>
 
 @required
 
+//tell you that you should begin recording
 - (void)chatPanelViewShouldBeginRecord:(WARVChatPanelView *)view;
+//tell you that you view should cancel recording
 - (void)chatPanelViewShouldCancelRecord:(WARVChatPanelView *)view;
+//tell you that you view should finish recording
 - (void)chatPanelViewShouldFinishedRecord:(WARVChatPanelView *)view;
 
 @end
@@ -24,9 +33,13 @@
 
 - (void)showInView:(UIView *)view;
 
+//you should call this method when you have prepared for record
 - (void)didBeginRecord;
+
+//update record time
 - (void)updateTime:(NSString *)time;
 
+//delegate
 @property (nonatomic, weak) id<WARVChatPanelViewDelegate> delegate;
 
 @end

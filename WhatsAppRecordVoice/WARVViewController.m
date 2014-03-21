@@ -61,11 +61,14 @@
 - (void)chatPanelViewShouldBeginRecord:(WARVChatPanelView *)view
 {
     //prepare for recording ..
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [view didBeginRecord];
-        [[NSRunLoop currentRunLoop] addTimer:self.testRecordTimer forMode:NSDefaultRunLoopMode];
-        [self.testRecordTimer fire];
-    });
+    [self performSelector:@selector(prepareForRecord) withObject:nil afterDelay:1.5f];
+}
+
+- (void)prepareForRecord
+{
+    [self.chatPanelView didBeginRecord];
+    [[NSRunLoop currentRunLoop] addTimer:self.testRecordTimer forMode:NSDefaultRunLoopMode];
+    [self.testRecordTimer fire];
 }
 
 - (void)invalidateTestTimer
@@ -77,11 +80,19 @@
 - (void)chatPanelViewShouldCancelRecord:(WARVChatPanelView *)view
 {
     [self invalidateTestTimer];
+    self.testSeconds = 0;
+    
+    //if system didn't prepare for record
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(prepareForRecord) object:nil];
 }
 
 - (void)chatPanelViewShouldFinishedRecord:(WARVChatPanelView *)view
 {
     [self invalidateTestTimer];
+    self.testSeconds = 0;
+    
+    //if system didn't prepare for record
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(prepareForRecord) object:nil];
 }
 
 @end

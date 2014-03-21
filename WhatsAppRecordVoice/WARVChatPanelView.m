@@ -303,7 +303,7 @@ void setViewFixedAnchorPoint(CGPoint anchorPoint, UIView *view)
     if (!_garbageImageView) {
         WARVGarbageView *imageView = [[WARVGarbageView alloc] init];
         CGRect frame = imageView.frame;
-        frame.origin = CGPointMake(self.recordBtn.center.x - frame.size.width / 2.0f, kFloatGarbageBeginY);
+        frame.origin = CGPointMake(_recordBtn.center.x - frame.size.width / 2.0f, kFloatGarbageBeginY);
         [imageView setFrame:frame];
         [self addSubview:imageView];
         _garbageImageView = imageView;
@@ -354,32 +354,55 @@ void setViewFixedAnchorPoint(CGPoint anchorPoint, UIView *view)
 {
     self.textField.hidden = NO;
     self.isCanceling = NO;
+    self.canCancelAnimation = NO;
     
-    [self.recordBtn.layer removeAllAnimations];
-    [self.recordBtn removeFromSuperview];
-    self.recordBtn = nil;
+    if (_recordBtn) {
+        [self.recordBtn.layer removeAllAnimations];
+        [self.recordBtn removeFromSuperview];
+        self.recordBtn = nil;
+    }
     
-    [self.slideView removeFromSuperview];
-    self.slideView = nil;
+    if (_slideView) {
+        [self.slideView removeFromSuperview];
+        self.slideView = nil;
+    }
     
-    [self.timeLabel removeFromSuperview];
-    self.timeLabel = nil;
+    if (_timeLabel) {
+        [self.timeLabel removeFromSuperview];
+        self.timeLabel = nil;
+    }
     
-    [self.garbageImageView removeFromSuperview];
-    self.garbageImageView = nil;
+    if (_garbageImageView) {
+        [self.garbageImageView removeFromSuperview];
+        self.garbageImageView = nil;
+    }
     
     [self.voiceBtn addTarget:self action:@selector(beginRecord:forEvent:) forControlEvents:UIControlEventTouchDown];
     [self.voiceBtn addTarget:self action:@selector(mayCancelRecord:forEvent:) forControlEvents:UIControlEventTouchDragOutside | UIControlEventTouchDragInside];
     [self.voiceBtn addTarget:self action:@selector(finishedRecord:forEvent:) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchCancel | UIControlEventTouchUpOutside];
     
     CGRect frame = self.otherBtn.frame;
+    CGFloat offset = self.textField.frame.origin.x - frame.origin.x;
     frame.origin.x -= 100;
     [self.otherBtn setFrame:frame];
     self.otherBtn.hidden = NO;
+    
+    CGFloat textFieldMaxX = CGRectGetMaxX(self.textField.frame);
+    self.textField.hidden = NO;
+    frame = self.textField.frame;
+    frame.origin.x = self.otherBtn.frame.origin.x + offset;
+    frame.size.width = textFieldMaxX - frame.origin.x;
+    [self.textField setFrame:frame];
+    
     [UIView animateWithDuration:0.3 animations:^{
         CGRect nframe = self.otherBtn.frame;
         nframe.origin.x += 100;
         [self.otherBtn setFrame:nframe];
+        
+        nframe = self.textField.frame;
+        nframe.origin.x = self.otherBtn.frame.origin.x + offset;
+        nframe.size.width = textFieldMaxX - nframe.origin.x;
+        [self.textField setFrame:nframe];
     }];
 }
 
